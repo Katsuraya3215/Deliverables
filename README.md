@@ -8,21 +8,15 @@ ifの条件分岐を使った、選択→入力→表示ツール
 
 ## 実行方法
 ```python
-def main():
-    signal = input("Signal color? ")
-
-    if signal == "red":
-        print("No")
-    elif signal == "yellow":
-        print("Slow down")
-    elif signal == "blue" or signal == "green":
-        print("Go")
-    else:
-        print("Invalid signal color...")
-
-if __name__ == "__main__":
-    main()
-
+signal = input("Signal color?")
+if signal == "red":
+    print("Stop")
+elif signal=="yellow":
+    print("Slow down")
+elif signal=="blue" or signal=="green":
+    print("Go")
+else :
+    print("Invalid signal")
 ```
 
 ##実施日　
@@ -49,7 +43,7 @@ while 1 == 1:
         case 0:
             break #whileの処理から抜ける
         case _:
-            print("Invited command,try again")
+            print("Invalid command,try again")
             continue #それ以降の処理をスキップして反復処理を実行
     print("Menu processed correctly")
 ```
