@@ -60,7 +60,6 @@ command=int(input())を使った数字入力、関数の定義、関数の挙動
 ##サンプルコード
 ```Python
 command=int(input("Which number do you want to square?"))
-
 def squared(n):
     return n**2
 
@@ -68,7 +67,6 @@ def calc(n,func):
     return func(n)
 
 print(calc(command,squared))
-
 ```
 
 
