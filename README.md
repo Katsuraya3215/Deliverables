@@ -48,5 +48,33 @@ while 1 == 1:
     print("Menu processed correctly")
 ```
 
+##実施日
+2026/1/24
+
+##概要
+command=int(input())を使った数字入力、関数の定義、関数の挙動確認
+
+##使用方法
+任意の入力された値の二乗を関数を使って計算し表示
+
+##サンプルコード
+```Python
+command=int(input("Which number do you want to square?"))
+
+def squared(n):
+    return n**2
+
+def calc(n,func):
+    return func(n)
+
+print(calc(command,squared))
+
+```
+
+
+
+
+
+
 
 
