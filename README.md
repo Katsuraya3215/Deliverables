@@ -88,9 +88,24 @@ for rank,s in enumerate(math_ranking,start=1):
 print(f"平均点{sum(fixed_math_scores)/len(fixed_math_scores):.1f}")
 ```
 
+##実施日
+2026/2/22
 
+##概要
+zip()を使い、リスト→辞書への変換、リスト内包表記
 
+##使用方法
+任意の教科を選択してもらって平均点を表示
 
+##サンプルコード
+```Python
+keys = ["国語", "数学", "英語","理科","社会"]
+values = [62, 45, 55, 62, 70]
+
+scores={k:v for k,v in zip(keys,values)}
+select=input("何の教科の平均点が知りたいですか？")
+print(scores[select])
+```
 
 
 
