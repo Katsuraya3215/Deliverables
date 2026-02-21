@@ -72,7 +72,7 @@ print(calc(command,squared))
 2026/2/21
 
 ##概要
-リスト内包表記、sortを使った並び替え(戻り値Noneの理解)、enumerate()を使った表示、インデックスの理解
+リスト内包表記、sortを使った並び替え(戻り値Noneの理解)、enumerate()を使った表示、インデックスの理解、sum()を使った合計計算とlen()の要素計算を利用した平均点の計算、要素の増減にも対応
 
 ##使用方法
 下駄をはかせてテスト点数を再計算、並び替え、ランキングを掲載、平均点の掲載
@@ -81,16 +81,11 @@ print(calc(command,squared))
 
 ```　python
 math_scores=[88,22,66,99,0,44,77,55,11,33]
-
-fixed_math_scores=[score+10 for score in math_scores] #リスト内包表記
-
-math_ranking=sorted(fixed_math_scores,reverse=True)　#大きい順への並び替え
-
-for rank,s in enumerate(math_ranking,start=1):  #インデックスと値を抽出
-	print(f"第{index+1}位 {s}点")
-
-print(f"平均点{sum(fixed_math_scores)/len(fixed_math_scores):.1f}") 
-#sumを使った合計と、len()を使った要素の数の計算、要素の増減にも対応
+fixed_math_scores=[score+10 for score in math_scores]
+math_ranking=sorted(fixed_math_scores,reverse=True)
+for rank,s in enumerate(math_ranking,start=1):
+	print(f"第{rank}位 {s}点")
+print(f"平均点{sum(fixed_math_scores)/len(fixed_math_scores):.1f}")
 ```
 
 
